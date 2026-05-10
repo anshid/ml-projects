@@ -63,6 +63,21 @@ An introductory PyTorch exercise demonstrating how a neural network can learn a 
 
 ---
 
+### 6. [Linear Regression & Gradient Descent — Visual Teaching Notebook](LinearRegression_GradientDescentAlgorithmV1.ipynb)
+A step-by-step educational notebook that builds deep intuition for linear regression and gradient descent through interactive visualizations. Designed for beginners with no prior ML background.
+
+- **Dataset:** 200-point synthetic dataset generated from a known true line (y = 4x + 7 + noise), chosen so the reader can verify that the algorithm recovers the correct parameters
+- **Concepts covered:** MSE loss function, convex loss surfaces, partial derivative derivations (hidden in collapsible cells for those who want the calculus), gradient descent update rule, learning rate selection
+- **Visualizations:**
+  - 3D interactive loss surface (bowl shape illustrating convexity)
+  - **Dual-panel interactive slider** — left panel shows the gradient descent path on the loss contour map; right panel shows the evolving regression line in data space; both update in sync
+  - Loss curve (convergence monitoring)
+  - 3D trajectory of gradient descent overlaid on the loss surface
+  - Side-by-side learning rate comparison (too small / just right / too large)
+- **Key insight conveyed:** Gradient descent moves through *parameter space* (slope, intercept) — the regression line improves only because the parameters improve. The synchronized dual-panel visualization makes this abstract idea concrete and observable.
+
+---
+
 ## 📊 Quick Overview
 
 | Project | Learning Type | Key Techniques | Best Result |
@@ -72,6 +87,7 @@ An introductory PyTorch exercise demonstrating how a neural network can learn a 
 | Seeds Clustering | Unsupervised | K-Means, PCA | 3 clean clusters |
 | MNIST Classifier | Image Classification | CNN (PyTorch), 2 architectures | 99.09% test accuracy |
 | Add Numbers | Intro / Regression | PyTorch linear net | Weights ≈ [1.0, 1.0] |
+| LR & GD Visual | Educational / Optimization | Gradient Descent, Interactive Plotly, MSE Loss Surface | Recovers true m=4, b=7 |
 
 ---
 
@@ -80,7 +96,7 @@ An introductory PyTorch exercise demonstrating how a neural network can learn a 
 **Deep Learning:** PyTorch, TensorFlow / Keras  
 **Machine Learning:** Scikit-learn, imbalanced-learn (SMOTE)  
 **Data & Analysis:** Pandas, NumPy  
-**Visualization:** Matplotlib, Seaborn  
+**Visualization:** Matplotlib, Seaborn, Plotly  
 **Data Sources:** UCI ML Repository, Kaggle Hub  
 **Environment:** Jupyter Notebook, Python 3
 
